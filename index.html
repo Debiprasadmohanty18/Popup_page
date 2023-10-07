@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POPUP Create</title>
+    <style>
+
+        * {
+            margin:0px;
+            padding:0px;
+        }
+
+        .body{
+            /* position: relative; */
+            height: 100vh;
+            width: 100%;
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+
+        }
+
+        #popup {
+
+            height: 400px;
+            width: 600px;
+            background-color: aqua;
+            border-radius: 20px;
+            display: none;
+        }
+        button{
+            border: 10px 15px;
+            border-radius: 10px;
+            background-color: chartreuse;
+            position: absolute;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <header class="body">
+    <div id="popup">
+        <button onclick="hide()" id="close">Click To Hide</button>    
+    </div>
+    </header>
+    <button onclick="show()" id="show">Click To Watch</div>
+
+
+
+
+        
+    <script>
+        function show()
+        {
+            document.getElementById('popup').style.display="flex";
+        }
+        function hide()
+        {
+            document.getElementById('popup').style.display="none";
+        }
+
+    </script>
+</body>
+</html>
